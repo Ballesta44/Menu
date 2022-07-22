@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportes Administracion</title>
+    <style>
+
+        *{padding: 0; margin: 0; box-sizing: border-box; 
+            font-family:'Times New Roman', Times, serif}
+            html {
+               overflow-y: overlay;
+               background-color: black;
+               scroll-behavior: smooth;
+            }
+
+        body{
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+
+        }
+        .contenedor1{ 
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            align-content: center;
+            margin: 2%;
+            margin-right: 0;
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border: 1px solid;
+            min-height: fit-content;
+            min-width: fit-content;
+            width: 25%;
+            border-right: 0px;
+            background-color: beige;
+            overflow-y: auto;
+          }
+          .contenedor2{ 
+            display: flex;
+            margin: 2%;
+            margin-left: 0;
+            border: 1px solid;
+            width: 70%;
+
+          }
+          img {
+                object-fit: cover;
+                max-width: 100%;
+                max-height: 100%;
+            }
+
+        .menu1, .menu2 {cursor: pointer;}
+        .menu2 {
+            margin-left: 20px;
+            padding: 10px;
+            padding-bottom: 0px;
+        }
+
+
+        ul{
+            margin-top: 5px;
+        }
+        li {
+            margin-left: 40px;
+
+        }
+
+        a {
+            display: inline-block;
+            /*margin-left: 40px;*/
+            padding-top: 7px;
+            text-decoration: none;
+            color: rgb(32, 128, 218);
+        }
+        a:hover {
+        font-weight: bold;
+        }
+
+        h1 {
+            margin-top: 20px;
+            margin-bottom: 40px;
+            border-bottom: 2px solid;
+            padding-bottom: 5px;
+        }
+        details {
+            padding-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="contenedor1">
+        <h1>Reportes Administración</h1>
+        <details>
+            <summary class="menu1">Talleres</summary>
+            <ul>
+                <li><a href='http://Srvw8sl05v/ReportServer?%2fInformes%2fSp_NcTalleres'>NC Talleres</a></li>
+                <li><a href='http://Srvw8sl05v/ReportServer?%2fInformes%2fSp_NcTalleresControl'>Control Faltantes</a></li>
+                <li><a href='http://Srvw8sl05v/ReportServer?%2fInformes%2fau_infopuntoAUDOK'>Aud.Cortes Pto/Cam</a></li>
+                <li><a href='http://Srvw8sl05v/ReportServer?%2fInformes%2fau_infopuntoSTKOK'>Cortes pend. Ingreso</a></li>
+                <li><a href='http://Srvw8sl05v/ReportServer?%2fInformes%2fau_talleresdesc'>Talleres a desc c/dif</a></li>
+                <li><a href='http://Srvw8sl05v/ReportServer?%2fInformes%2fau_rempenadesc'>Remitos pend desc</a></li>                
+            </ul>
+        </details>
+    
+        <details>
+            <summary class="menu1">Ctas. a Pagar</summary>
+            <ul>
+                <li><a href='http://Srvw8sl05v/ReportServer?%2fInformes%2fSp_VencProveedores'>Vencimientos</a></li>
+                <li><a href='http://Srvw8sl05v/ReportServer?%2fInformes%2fSP_vencProvAtrib'>Venc.x Atributo</a></li>
+                <li><a href='http://Srvw8sl05v/ReportServer?%2fInformes%2fSP_vencProvAtribCons'>Venc.x Atrib.Cons</a></li>
+                <li><a href='http://Srvw8sl05v/ReportServer?%2fInformes%2fSP_opdiarias'>Ord. Pago</a></li>
+                <li><a href='http://Srvw8sl05v/ReportServer?%2fInformes%2fSP_deuda'>Cuadro de Deuda</a></li>
+                <li><a href='http://Srvw8sl05v/ReportServer?%2fInformes%2fSP_diaspagoproveedoresOK'>Promedio Dias Pago</a></li>
+                <li><a href='http://Srvw8sl05v/ReportServer?%2fInformes%2fpa_difcotizOK'>Calc.Dif.Cambio</a></li>
+                <li><a href='http://Srvw8sl05v/ReportServer?%2fInformes%2fpa_tarjCorporativas'>Concil. Tarjetas</a></li>
+                <li><a href='http://Srvw8sl05v/ReportServer?%2fInformes%2fSP_ListaChqDif'>Lista de Chq.Dif </a></li>
+                <li><a href='http://Srvw8sl05v/ReportServer?%2fInformes%2fSP_BuscaProve'>Busca Proveedor</a></li>
+                <li><a href=' http://Srvw8sl05v/ReportServer?%2fInformes%2fPA_Carpetas'> Carpetas Importación</a></li>
+                <li><a href=' http://Srvw8sl05v/ReportServer?%2fInformes%2fPA_prestamos'> Préstamos</a></li>
+                <li><a href=' http://Srvw8sl05v/ReportServer?%2fInformes%2fsp_saldosProvCHR'> Chs. Rechazados</a></li>
+                <li><a href=' http://Srvw8sl05v/ReportServer?%2fInformes%2fpa_pagosElec'> Pagos Electrónicos</a></li>
+                <li><a href=' http://Srvw8sl05v/ReportServer?%2fInformes%2fpa_chselecarch'> Chs.Elect.Credicoop</a></li> 
+            </ul>
+        </details>
+    
+        <details>
+            <summary class="menu1">Finanzas</summary>
+            <ul>
+                <li><a href='http://Srvw8sl05v/ReportServer?%2fInformes%2fSp_IngresosProm'>Ingr.Promedio</a></li>
+                <li><a href='http://Srvw8sl05v/ReportServer?%2fInformes%2fSp_IngresosProm1A'>Ing. Prom. Fut. A</a></li>
+                <li><a href='http://Srvw8sl05v/ReportServer?%2fInformes%2fSp_ChequesCartera'>Cartera Chs.</a></li>
+                <li><a href='http://Srvw8sl05v/ReportServer?%2fInformes%2fSp_EoafTVNTTes'>Eoaf Tes</a></li>
+                <li><a href='http://Srvw8sl05v/ReportServer?%2fInformes%2ftes_deposconcil'>Dep.Concil.PEND</a></li>
+                <li><a href='http://Srvw8sl05v/ReportServer?%2fInformes%2ftes_deposconcilTabla'> Dep.Concil.TODOS</a></li>
+                <li><a href=' http://Srvw8sl05v/ReportServer?%2fInformes%2ftes_DeposConcilNVO'> Dep.Concil.NUEVO</a></li>
+                <li><a href='http://Srvw8sl05v/ReportServer?%2fInformes%2fad_recargotarjetas'>Recargos Tar. Liq.</a></li>                
+            </ul>
+        </details>
+    
+        <details>
+            <summary class="menu1">Compras</summary>
+            <ul>
+                <li><a href='http://Srvw8sl05v/ReportServer?%2fInformes%2fSp_Gastos'>Gastos</a></li>
+                <li><a href='http://Srvw8sl05v/ReportServer?%2fInformes%2fSp_GastosComp'>Gtos.Comparativo</a></li>
+                <li><a href='http://Srvw8sl05v/ReportServer?%2fInformes%2fSp_GastosComp3p'>Gtos.Compar. 3P</a></li>
+                <li><a href='http://Srvw8sl05v/ReportServer?%2fInformes%2fSp_GastosComp3pA'>Gtos.Compar.3A</a></li>
+                <li><a href='http://Srvw8sl05v/ReportServer?%2fInformes%2fSp_GastosCompFlor'>Gtos Compar.Aud</a></li>
+                <li><a href='http://Srvw8sl05v/ReportServer?%2fInformes%2fSp_EoafTVNT'>Eoaf</a></li>
+                <li><a href='http://Srvw8sl05v/ReportServer?%2fInformes%2fOrdenCompraPendPROV'>Comp.Pend.Prov</a></li>
+                <li><a href='http://Srvw8sl05v/ReportServer?%2fInformes%2fSp_OCPendxArt'>Comp.Pend.Articulo</a></li>
+                <li><a href='http://Srvw8sl05v/ReportServer?%2fInformes%2fOrdenCompraPend'>Compras Pend A</a></li>
+                <li><a href='http://Srvw8sl05v/ReportServer?%2fInformes%2fOrdenCompraPendZ'>Compras Pend Z</a></li>
+                <li><a href='http://Srvw8sl05v/ReportServer?%2fInformes%2fOrdenCompraPendCons'>Compras Pend Cons</a></li>
+                <li><a href='http://Srvw8sl05v/ReportServer?%2fInformes%2fSp_controlctacteProv'>Control Ct.Cte.Prov</a></li>
+                <li><a href='http://Srvw8sl05v/ReportServer?%2fInformes%2fSp_controlctacteProvFUT'>Control CC.Prov.FUT</a></li>
+                <li><a href='http://Srvw8sl05v/ReportServer?%2fInformes%2fSp_AuditoriaCompras'>Auditoria Compras</a></li>
+                <li><a href='http://Srvw8sl05v/ReportServer?%2fInformes%2fSp_CostoInsumos'>Varianza de Costos</a></li>
+                <li><a href=' http://Srvw8sl05v/ReportServer?%2fInformes%2fSp_Gastosimportacion'> Costos Importación</a></li>
+                <li><a href=' http://Srvw8sl05v/ReportServer?%2fInformes%2flis_veocostos'> Costos x ítem</a></li>                
+            </ul>
+        </details>
+    
+    <details>
+        <summary class="menu1">Cuentas a Cobrar</summary>
+        <ul>
+            <li><a href='http://Srvw8sl05v/ReportServer?%2fInformes%2fSp_sobressincargar'>Sobres sin abrir</a></li>
+            <li><a href='http://Srvw8sl05v/ReportServer?%2fInformes%2fSp_sobrescargados'>Valores recibidos</a></li>
+            <li><a href='http://Srvw8sl05v/ReportServer?%2fInformes%2fSp_sobrescargadosCORR'>Val.recib x CORR</a></li>
+            <li><a href='http://Srvw8sl05v/ReportServer?%2fInformes%2fSp_sobrescargadosFECH'>Val.recib x VTO</a></li>
+            <li><a href='http://Srvw8sl05v/ReportServer?%2fInformes%2fSp_verifcheques'>Val.sin ingresar Bas</a></li>
+            <li><a href='http://Srvw8sl05v/ReportServer?%2fInformes%2fSp_verifcajacobranzas'>Control de Caja</a></li>
+            <li><a href='http://Srvw8sl05v/ReportServer?%2fInformes%2fSp_valoresdevueltos'>Valores Devueltos</a></li>
+            <li><a href='http://Srvw8sl05v/ReportServer?%2fInformes%2fSp_SaldosCliCHR'>Ds.Por Cheq.Rech.</a></li>
+            <li><a href='http://Srvw8sl05v/ReportServer?%2fInformes%2fSp_SaldosCliCHRcorr'>Chs.Rech.x Corr</a></li>
+            <li><a href=' http://Srvw8sl05v/ReportServer?%2fInformes%2fSp_ConsChq'> Consulta de Cheque</a></li>
+            <li><a href=' http://Srvw8sl05v/ReportServer?%2fInformes%2fCOb_ObsAfip'> Observaciones Afip</a></li>            
+        </ul>
+    </details>
+    
+    <details>
+        <summary class="menu1">Contable</summary>
+        <ul>
+            <li><a href='http://Srvw8sl05v/ReportServer?%2fInformes%2fcon_rectarjetas'>Recargo Tarjetas</a></li>
+            <li><a href='http://Srvw8sl05v/ReportServer?%2fInformes%2fco_VtasCamara'>Ventas Camara</a></li>
+            <li><a href='http://Srvw8sl05v/ReportServer?%2fInformes%2fco_preciosCamara'>Precios Camara</a></li>
+            <li><a href='http://Srvw8sl05v/ReportServer?%2fInformes%2fco_prodnuevosCamara'>Prod.Nuevos Camara</a></li>
+            <li><a href='http://Srvw8sl05v/ReportServer?%2fInformes%2fco_MovimientosItems'>Movimiento Items</a></li>
+            <li><a href='http://Srvw8sl05v/ReportServer?%2fInformes%2fcon_RemitosCAI'>Remitos - CAI</a></li>
+            <li><a href='http://Srvw8sl05v/ReportServer?%2fInformes%2fSP_CmpAfipCli            '>Cmp Afip-Cli</a></li>
+            <li><a href='http://Srvw8sl05v/ReportServer?%2fInformes%2fSP_CmpAfipProImp            '>Cmp Afip-Pro Imp</a></li>
+            <li><a href='http://Srvw8sl05v/ReportServer?%2fInformes%2fSP_CmpAfipProApli            '>Cmp Afip-Pro Apl</a></li>
+            <li><a href='http://Srvw8sl05v/ReportServer?%2fInformes%2fSp_GastosComp3pA            '>Gtos.Compar. 3P</a></li>
+            <li><a href='http://Srvw8sl05v/ReportServer?%2fInformes%2fSP_FactSalta            '>Fact. Salta</a></li>
+            <li><a href='http://Srvw8sl05v/ReportServer?%2fInformes%2fCO_VentasIIBB'>Ventas IIBB</a></li>
+            <li><a href=' http://Srvw8sl05v/ReportServer?%2fInformes%2fCON_mayorchsrech'> Chs.Rech.concil</a></li>
+            <li><a href=' http://Srvw8sl05v/ReportServer?%2fInformes%2fCON_axiiibb'> Ajuste x Inflación</a></li>
+            <li><a href=' http://Srvw8sl05v/ReportServer?%2fInformes%2fCON_PerSufSicol'> PerSuf IIBB CF Mega</a></li>
+            <li><a href=' http://Srvw8sl05v/ReportServer?%2fInformes%2fCON_PerIIBBSanLuis'> Per IIBB San Luis</a></li>
+            <li><a href=' http://Srvw8sl05v/ReportServer?%2fInformes%2fCON_VentasMisiones'> Envios Misiones</a></li>            
+        </ul>
+    </details>
+    </div>
+    <div class="contenedor2">
+        <img src="http://192.168.0.162/img/foto5.jpg" alt=""  >
+    </div>
+
+</body>
+<script>
+
+const All_Details = document.querySelectorAll('details');
+
+All_Details.forEach(itemMenu=>{
+    itemMenu.addEventListener('toggle', toggleOpenOneOnly)
+})
+
+function toggleOpenOneOnly(e) {
+  if (this.open) {
+    All_Details.forEach(itemMenu=>{
+        if (itemMenu!=this && itemMenu.open) itemMenu.open = false
+        /* Agrego Scrolleo */ 
+        if (itemMenu=this) itemMenu.scrollIntoView({behavior:"smooth"})
+    });
+  }
+}
+
+
+</script>
+</html>
